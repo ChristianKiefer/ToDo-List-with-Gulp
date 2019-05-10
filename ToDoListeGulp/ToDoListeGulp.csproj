@@ -1,0 +1,53 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+    <TypeScriptToolsVersion>3.1</TypeScriptToolsVersion>
+    <AssemblyName>ToDoListeGrunt</AssemblyName>
+    <RootNamespace>ToDoListeGrunt</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="AppAssets\css\siteBody.less" />
+    <None Remove="AppAssets\favicon.ico" />
+    <None Remove="AppAssets\js\file.ts" />
+    <None Remove="AppAssets\js\site.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="AppAssets\css\site.css">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="AppAssets\css\siteBody.less">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="AppAssets\img\favicon.ico">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="AppAssets\js\site.js">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.2.0" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <TypeScriptCompile Include="AppAssets\js\file.ts" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <Folder Include="wwwroot\css\" />
+    <Folder Include="wwwroot\img\" />
+    <Folder Include="wwwroot\js\" />
+    <Folder Include="wwwroot\lib\" />
+  </ItemGroup>
+
+</Project>

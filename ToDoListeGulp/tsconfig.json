@@ -1,0 +1,19 @@
+{
+  "compileOnSave": true,
+  "compilerOptions": {
+    "outDir": "AppAssets/js",
+    "noImplicitAny": false, 
+    "noEmitOnError": true, 
+    "removeComments": true,
+    "sourceMap": false,
+    "target": "es5",
+    "alwaysStrict": true
+  },
+  "include": [
+    "AppAssets/js/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "wwwroot"
+  ]
+}
